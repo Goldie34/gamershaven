@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gamer's Haven - Complete Portal</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+</head>
+<body>
+  <header>
+    <h1>🎮 Gamer's Haven</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#aboutSection">About Us</a></li>
+        <li>Games
+          <ul>
+            <li>FPS</li>
+            <li>RPG</li>
+            <li>MMO</li>
+          </ul>
+        </li>
+        <li><a href="#formSection">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container animate-on-scroll" id="gallerySection">
+      <h2>Game Gallery</h2>
+      <img src="images/cod-thumb.jpg" class="thumbnail animate-on-scroll" data-full="images/cod.jpg" alt="COD">
+      <img src="images/nfs-thumb.jpg" class="thumbnail animate-on-scroll" data-full="images/nfs.jpg" alt="NFS">
+      <img src="images/thps-thumb.jpg" class="thumbnail animate-on-scroll" data-full="images/THPS.jpg" alt="THPS">
+      <img src="images/skate3-thumb.jpg" class="thumbnail animate-on-scroll" data-full="images/skate3.jpg" alt="Skate 3">
+      <img src="images/forza-thumb.jpg" class="thumbnail animate-on-scroll" data-full="images/forza.jpg" alt="Forza">
+    </div>
+
+    <div class="container animate-on-scroll" id="aboutSection">
+      <h2>About Us</h2>
+      <p>Welcome to <strong>Gamer’s Haven</strong>—your ultimate destination for everything gaming.
+      We're a community of passionate players, from FPS thrill-seekers to RPG strategists and MMO adventurers.</p>
+      <p>Here, you'll find the latest news, iconic titles, and a space where every gamer, casual or hardcore, feels at home.
+      Whether you're chasing leaderboards or just exploring pixelated worlds, Gamer's Haven has your back.</p>
+      <p>We believe gaming is more than a hobby—it's a culture. Let's level up together.</p>
+    </div>
+
+    <div id="overlay">
+      <span class="closeBtn">X</span>
+      <button id="prevBtn" class="navBtn">⟵</button>
+      <img id="fullImg" src="" alt="Full Size Game">
+      <button id="nextBtn" class="navBtn">⟶</button>
+    </div>
+
+    <div class="container animate-on-scroll" id="linkSection">
+      <h2>Favorite Gaming Sites</h2>
+      <a href="https://www.ign.com" class="extLink">IGN</a>
+      <a href="https://www.pcgamer.com/" class="extLink">PC Gamer</a>
+      <a href="https://www.gameinformer.com/" class="extLink">Game Informer</a>
+    </div>
+
+    <div id="siteOverlay">
+      <span class="closeSite">X</span>
+      <iframe id="siteFrame"></iframe>
+    </div>
+
+    <div class="container animate-on-scroll" id="formSection">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label for="username">Gamer Tag:</label>
+        <input type="text" id="username" name="username" required />
+
+        <label>Select Your Favorite Genre:</label><br>
+        <input type="radio" name="genre" value="FPS"> FPS
+        <input type="radio" name="genre" value="RPG"> RPG
+        <input type="radio" name="genre" value="MMO"> MMO
+
+        <button type="submit">Submit</button>
+      </form>
+      <div id="messageArea"></div>
+    </div>
+
+    <div class="container animate-on-scroll" id="projectDoc">
+      <h2>Design Documentation</h2>
+      <p><strong>Project Theme:</strong> Gamer’s Haven blends neon-inspired accents with high-contrast backgrounds to reflect the energy and excitement of competitive and casual gaming.</p>
+      <p><strong>Color Choices:</strong> Dark backgrounds paired with bright highlights evoke a modern, esports-inspired aesthetic. Colors were chosen for accessibility and immersion.</p>
+      <p><strong>Fonts:</strong> The page uses bold, sans-serif fonts for readability and a clean, tech-forward tone suited to the gaming community.</p>
+      <p><strong>Image Use:</strong> Game thumbnails and overlays are used to create a visual experience that feels interactive and familiar to gamers.</p>
+      <p>All image attributions and CWP hosting information can be found on the <a href="documentation.html">Documentation Page</a>.</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Gamer's Haven | <a href="documentation.html">Documentation Page</a></p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
